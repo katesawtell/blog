@@ -163,7 +163,7 @@ footer{
   }
 }
 
-.side img {
+img {
   max-width: 100%;   /* don’t overflow panel width */
   height: auto;      /* keep aspect ratio */
   display: block;    /* removes inline gaps */
@@ -171,4 +171,43 @@ footer{
   image-rendering: pixelated; /* crisp for pixel art */
 }
 
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;} /* End https://www.cursors-4u.com */
+.grid.no-side {
+  grid-template-columns: 220px 1fr; /* only two columns now */
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* space between icons */
+  justify-items: center; /* center icons horizontally */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon-item img {
+  width: 100px;  /* adjust size smaller or larger */
+  height: 100px;
+  object-fit: contain;
+  image-rendering: pixelated; /* optional if pixel icons */
+  transition: transform 0.2s;
+}
+
+.icon-item img:hover {
+  transform: scale(1.1); /* little hover zoom */
+}
+
+.icon-label {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px; /* adjust label size */
+  color: #333; /* or your theme color */
+  font-family: "Press Start 2P", monospace; /* matches your retro vibe */
+}
+
+.faves .ul {
+  columns: 2;
+  gap: 1.25rem;
+  list-style: "✿  ";
+  padding-left: 1.2rem;
+}
+.faves li { margin: .25rem 0; }
