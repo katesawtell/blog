@@ -156,6 +156,9 @@ footer{
   color:#444;
 }
 
+.content{ position: relative; z-index: 2; }
+.side{ position: relative; z-index: 1; }
+
 /* Mobile: stack columns */
 @media (max-width: 950px){
   .grid{
