@@ -358,11 +358,11 @@ img {
   display: none;
 }
 
-/* .pp-title {
+.pp-title {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: lowercase;
-} */
+}
 
 .pp-meta {
   opacity: 0.7;
