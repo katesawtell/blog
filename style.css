@@ -326,4 +326,82 @@ img {
   cursor: pointer;
 }
 
+.archive{
+    background: rgb(239, 201, 250);
+}
+
+.pp-accordion {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pp-item {
+  border: 2px dotted #ff5aa8;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.pp-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  user-select: none;
+}
+
+.pp-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* .pp-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+} */
+
+.pp-meta {
+  opacity: 0.7;
+  font-size: 0.95em;
+}
+
+.pp-body {
+  padding: 12px 14px 16px;
+  border-top: 2px dotted #ff5aa8;
+  display: grid;
+  gap: 10px;
+}
+
+.pp-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.pp-body ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.pp-note {
+  margin: 0;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* tiny lil arrow without being annoying */
+.pp-item summary::after {
+  content: "＋";
+  font-weight: 700;
+  opacity: 0.8;
+}
+.pp-item[open] summary::after {
+  content: "－";
+}
+
 
